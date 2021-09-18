@@ -62,6 +62,8 @@ $( document ).ready(function() {
         str = str + "<tr><td>" + i + "<td>" + (i * i) + "<td>" + (i * i * i);
     }
 
+    str += '</table><a href="./index.html"><h1>Về trang chủ</h1></a>';
+
     // Tra ve chuoi html hien thi bang tinh
     document.write(str);
 });
