@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./css/cal.css">
+</head>
+<body>
+  <h1>Calculator Design Using HTML Layout</h1>
+  <div class="container">
+    <div class="header">Calculator</div>
+    <input type="text" class="result" id="res">
+    
+    <div class="first-row">
+      <input type="button" name="" value="7" class="global" onclick="f('7')">
+      <input type="button" name="" value="8" class="global" onclick="f('8')">
+      <input type="button" name="" value="9" class="global" onclick="f('9')">
+      <input type="button" name="" value="/" class="global" onclick="f('/')">
+    </div>
+    <div class="second-row">
+      <input type="button" name="" value="4" class="global" onclick="f('4')">
+      <input type="button" name="" value="5" class="global" onclick="f('5')">
+      <input type="button" name="" value="6" class="global" onclick="f('6')">
+      <input type="button" name="" value="X" class="global" onclick="f('*')">
+    </div>
+    <div class="third-row">
+      <input type="button" name="" value="1" class="global" onclick="f('1')">
+      <input type="button" name="" value="2" class="global" onclick="f('2')">
+      <input type="button" name="" value="3" class="global" onclick="f('3')">
+      <input type="button" name="" value="-" class="global" onclick="f('-')">
+    </div>
+    <div class="conflict">
+      <div class="left">
+        <input type="button" name="" value="0" class=" big" onclick="f('0')">
+        <input type="button" name="" value="+/-" class=" small" onclick="f('--')">
+        <input type="button" name="" value="Del" class=" red small white-text top-margin" onclick="f('c')">
+        <input type="button" name="" value="=" class=" green white-text big top-margin" onclick="f('=')">
+      </div>
+      <div class="right">
+        <input type="button" name="" value="+" class="global grey plus" onclick="f('+')">
+      </div>
+    </div>
+  </div>
+  <script src="./js/jquery.min.js"></script>
+  <script src="./js/cal.js"></script>
+</body>
+</html>
