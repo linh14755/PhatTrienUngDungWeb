@@ -41,9 +41,9 @@
                 <td><?php echo $List["phone"] ?></td>
                 <td><?php echo $List[7] ?></td>
                 <td>
-                    <a href="index.php?action=detail&id=<?php echo $List[0] ?>">Detail</a> |
-                    <a href="index.php?action=eedit&id=<?php echo $List[0] ?>">Edit</a> |
-                    <a href="index.php?action=edelete&id=<?php echo $List[0] ?>">Delete</a>
+                    <a class="btn btn-primary" href="index.php?action=detail&id=<?php echo $List[0] ?>">Detail</a> 
+                    <a class="btn btn-warning" href="index.php?action=eedit&id=<?php echo $List[0] ?>">Edit</a> 
+                    <a class="btn btn-danger" href="index.php?action=edelete&id=<?php echo $List[0] ?>">Delete</a>
                 </td>
             </tr>
             <?php

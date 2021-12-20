@@ -13,8 +13,6 @@
 </head>
 <body>
 <div class="container">
-
-
         <h2>Department List</h2>
         <p><a href="index.php?action=phongadd" class="btn btn-success">Thêm</a></p>
         <table class="table table-hover text-nowrap">
@@ -36,9 +34,9 @@
                     <td><?php echo $List["NumberOfStaff"] ?></td>
 
                     <td>
-                        <a href="index.php?action=phongchitiet&id=<?php echo $List["id"] ?>">Detail</a> |
-                        <a href="index.php?action=phongedit&id=<?php echo $List["id"] ?>">Edit</a> |
-                        <a href="index.php?action=phongdelete&id=<?php echo $List["id"] ?>">Delete</a>
+                        <a class="btn btn-primary" href="index.php?action=phongchitiet&id=<?php echo $List["id"] ?>">Detail</a> 
+                        <a class="btn btn-warning" href="index.php?action=phongedit&id=<?php echo $List["id"] ?>">Edit</a> 
+                        <a class="btn btn-danger" href="index.php?action=phongdelete&id=<?php echo $List["id"] ?>">Delete</a>
                     </td>
                 </tr>
                 <?php
